@@ -1,0 +1,29 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar-open {
+  margin-left: 250px; /* Width of open sidebar */
+}
+
+.sidebar-closed {
+  margin-left: 80px; /* Width of closed sidebar */
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-open {
+    margin-left: 80px;
+  }
+
+  .sidebar-closed {
+    margin-left: 0;
+  }
+}
